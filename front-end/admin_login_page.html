@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class=s-header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <img src="Images/logo.png" alt="" class="logo">
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="">About Us</a></li>
+                <li class="item"><a href="Policies.html">Policies</a></li>
+                <li class="item"><a href="ContactUs.html">Contact Us</a></li>
+                <form action="/auth/admin/logout" method="post"> 
+                    <button type="submit" class="btn sign-btn">Logout</button></form>
+                <!-- <a class="btn sign-btn" href="http://localhost:8080/auth/admin/logout"></a> -->
+                <!-- <div class="dropdown">
+                    <button class="btn login-btn dropbtn"><a href="">Login</a></button>
+                    <div class="dropdown-content">
+                        <a href="AdminLogin.html">Admin Login</a>
+                        <a href="UserLogin.html">User Login</a>
+                        <a href="AgentLogin.html">Agent Login</a>
+                    </div>
+                </div> -->
+            </ul>
+        </nav>
+    </header>
+    <h3 class="logo-heading">Secure Your Future</h3>
+
+
+    <h3 class="login-heading">Welcome</h3>
+    <div class="policy-btn">
+        <button class="btn p-btn1" id="p-btn">Add Policy</button>
+        <div id="addPolicy-form">
+            <form action="/admin/addpolicy" method="post" class="add-form">
+
+                <p class="policy-heading">Enter the details</p>
+                <label for="policy_id"> Policy Id:</label> <input type="number" name="policy_id" required>
+                <br>
+                <label for="policy_details">Policy Details:</label> <input type="text" name="policy_details" required>
+                <br>
+               <!-- <label for="policy-id">Policy Id:</label> <input type="text" name="policy-id" >
+                <br>
+                <label for="policy-detail">Policy Details:</label>  <textarea type="text" name="policy-detail" cols="50" rows="2"
+                    placeholder="Enter the policy"></textarea>
+                    <br> -->
+                <label for="Type-of-Policy">Type of Policy</label>
+                <select name="type" id="type" required>
+                    <option value="" class="type"></option>
+                    <option value="Health-Policy" class="type">Health Policy</option>
+                    <option value="Vehicle-Policy" class="type">Vehicle Policy</option>
+                    <option value="Home-Policy" class="type">Home Policy</option>
+                </select>
+                <br>
+                Duration: <input type="number" name="duration" required>
+                <br>
+                Amount: <input type="number" name="amount" required>
+                <br>
+
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+
+
+        <button class="btn p-btn1" id="r-btn">Remove Policy</button>
+        <div id="removePolicy-form">
+            <form action="/admin/removepolicy" method="post" class="remove-form">
+                <p class="remove-heading">Enter the policy id to remove the Policy</p>
+                Policy Id: <input type="number" name="policy_id" >
+                <br>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+        <button type="button"  class="btn p-btn1" id="v1">View Health Policies</button>
+        <div id="d1"></div>
+        <button type="button" class="btn p-btn1" id="v2">View Vehicle Policies</button>
+        <div id="d2"></div>
+        <button type="button" class="btn p-btn1" id="v3">View Home Policies</button>
+        <div id="d3"></div>
+        <button type="button" class="btn p-btn1" id="v4">View All Customers</button>
+        <div id="d4"></div>
+
+        <button class="btn p-btn1" id="revbtn">Review Policy</button>
+        <div id="reviewPolicy-form">
+            <form action="/admin/reviewpolicy" method="post" class="remove-form">
+                <p class="remove-heading">Enter Username and Policy</p>
+                Username: <input type="text" name="username" required >
+                Policy Id: <input type="number" name="policy_id" required >
+                <br>
+                <label for="status">Status: </label>
+                <select name="status" id="status" required>
+                    <option value="Accept" class="status">Accept</option>
+                    <option value="Reject" class="status">Reject</option>
+                </select>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="./node_modules/axios/dist/axios.min.js"></script> -->
+    <script src="policy.js"></script>
+    
+
+
+</body>
+
+</html>

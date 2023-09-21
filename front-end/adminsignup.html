@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class=sign-header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <img src="Images/logo.png" alt="" class="logo">
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="">About</a></li>
+                <li class="item"><a href="Policies.html">Policies</a></li>
+                <li class="item"><a href="ContactUs.html">Contact Us</a></li>
+                <a class="btn sign-btn" href="SignUp.html">Sign In</a>
+                <div class="dropdown">
+                    <button class="btn login-btn dropbtn"><a href="">Login</a></button>
+                    <div class="dropdown-content">
+                        <a href="AdminLogin.html">Admin Login</a>
+                        <a href="UserLogin.html">User Login</a>
+                        <a href="AgentLogin.html">Agent Login</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <h3 class="logo-heading">Secure Your Future</h3>
+
+
+    <h3 class="login-heading">Sign Up</h3>
+    <div class="login-form">
+        <form action="/auth/register" method="post">
+
+
+            <div class="form-field">
+                <label for="email" class="form-label email-label">Email: </label>
+                <input type="email"  name="email"  placeholder="Email" required />
+            </div>
+            <div class="form-field">
+                <label for="username" class="form-label">Username: </label>
+                <input type="text"  name="username" placeholder="Username" required />
+            </div>
+
+            <div class="form-field">
+                <label for="Password" class="form-label">Password: </label>
+                <input type="password" name="password" placeholder="Password" required />
+            </div>
+
+            <div class="form-field">
+                <button class="btn lg-btn" type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <title>Health Policy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class=form-header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <img src="Images/logo.png" alt="" class="logo">
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="">About</a></li>
+                <li class="item"><a href="Policies.html">Policies</a></li>
+                <li class="item"><a href="ContactUs.html">Contact Us</a></li>
+                <a class="btn sign-btn" href="">Log Out</a>
+            </ul>
+        </nav>
+    </header>
+    <h3 class="logo-heading">Secure Your Future</h3>
+
+
+    <h3 class="login-heading">Home Policy</h3>
+    <div class="login-form">
+        <form action="/inserthome" method="post">
+
+            <div class="form-field">
+                <label for="username" class="form-label">Username: </label>
+                <input type="text" name="username" placeholder="Username" required />
+            </div>
+
+            <div class="form-field">
+                <label for="policy_id" class="form-label">Policy Id: </label>
+                <input type="number" name="policy_id" placeholder="Policy Id" required />
+            </div>
+
+            <div class="form-field">
+                <label for="owner" class="form-label">Owner Name: </label>
+                <input type="text" name="owner" placeholder="Owner Name" required />
+            </div>
+
+            <div class="form-field">
+                <label for="house_no" class="form-label">House Number: </label>
+                <input type="text" name="house_no" placeholder="House Number" required />
+            </div>
+           
+            <div class="form-field">
+                <label for="city" class="form-label">City: </label>
+                <input type="text" name="city" placeholder="City" required />
+            </div>
+
+            <div class="form-field">
+                <label for="pincode" class="form-label">Pincode: </label>
+                <input type="number" name="pincode" placeholder="Pincode" required />
+            </div>
+
+
+            <div class="form-field">
+                <label for="phone" class="form-label">Phone Number: </label>
+                <input type="tel" name="phone" placeholder="Phone Number" required />
+            </div>
+
+            <div class="form-field">
+                <button class="btn lg-btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

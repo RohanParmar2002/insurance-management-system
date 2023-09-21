@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <title>User Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class=si-header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <img src="Images/logo.png" alt="" class="logo">
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="">About Us</a></li>
+                <li class="item"><a href="Policies.html">Policies</a></li>
+                <li class="item"><a href="ContactUs.html">Contact Us</a></li>
+                <a class="btn sign-btn" href="">Log Out</a>
+            </ul>
+        </nav>
+    </header>
+    <h3 class="logo-heading">Secure Your Future</h3>
+
+
+    <h3 class="login-heading">Welcome</h3>
+    <div class="policy-btn">
+        <button class="btn p-btn1" id="p-btn">Buy Policy</button>
+        <div id="addPolicy-form">
+            <li>
+                <ul><a href="health_form.html" class="policyOption">Health Policy</a></ul>
+                <ul> <a href="vehicle_form.html" class="policyOption">Vehicle Policy</a></ul>
+                <ul> <a href="home_form.html" class="policyOption">Home Policy</a></ul>
+            </li>
+        </div>
+        <button class="btn p-btn1" id="v1">Renew Policy</button>
+        <div id="removePolicy-form">
+            <form action="" method="post" class="remove-form">
+                <p class="remove-heading">Enter the policy id to renew the Policy</p>
+                <label for="policy_id">Policy Id:</label>
+                <input type="text" name="policy_id" id="pid">
+                <br>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+        <button class="btn p-btn1" id="v2" >View My Policies</button>
+        <div id="viewpolicy">
+    <button class="policy-option btn" id="u1">Health Policy</button>
+    <div id="d1"></div>
+     <button class="policy-option btn" id="u2">Vehicle Policy</button>
+     <div id="d2"></div>
+        <button class="policy-option btn" id="u3">Home Policy</button>
+        <div id="d3"></div>
+    </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="user.js"></script>
+    
+
+
+</body>
+
+</html>
